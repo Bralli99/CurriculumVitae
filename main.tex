@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\name{Brando Chiminelli}
+\tagline{EIT Digital MSc Student in Cloud and Network Infrastructures}
+\photo{2.8cm}{media/xx.jpg}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+    \location{Stockholm, Sweden}
+    \phone{+39 3349775212}
+    \email{\href{mailto:brando.chiminelli99@gmail.com}{brando.chiminelli99@gmail.com}}
+    \linkedin{\href{https://www.linkedin.com/in/brando-chiminelli/}{@brando-chiminelli}}
+    % \github{\href{https://github.com/Bralli99}{@Bralli99}}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{About me}
+
+I'm an adventurer and an explorer, I love hiking and skiing in the beautiful Dolomites near where I live.
+I like to share my passions with my friends and my scout group, where I bring my competencies as a leader and grow new skills year after year.
+\vspace{0.3cm}
+
+Currently, I'm in the second year of my Master's at the KTH Royal Institute of Technology, studying Cloud and Network Infrastructures.
+I have always been interested and fascinated by new technological developments and the disruptive impact they have on our world, which is why my ambition is to pursue a career in the ICT field.
+\vspace{0.3cm}
+
+My main interests right now are in cloud computing, 5g networks and machine learning. I'm open to master thesis opportunities related to the above subjects.
+\vspace{0.3cm}
+
+\cvsection{Projects and experiences}
+
+%\cvevent{\href{https://github.com/xxx/proj_name}{Estimation of a drone flock's pose}}{University of Trento}{Jul 2022 -- Present}{}
+
+\cvevent{\textbf{EIT Digital Summer School}: \href{https://summerschool.eitdigital.eu/artificial-intelligence-in-financial-services}{Artificial Intelligence in Financial Services}}{Budapest University of Technology and Economics}{Jul 2022 -- Jul 2022}{Budapest, Hungary}
+The \href{https://www.eitdigital.eu/}{EIT Digital} Summer School is a two-week experience that brings together master students from all of Europe's major technical universities to work on business challenges with companies in groups.
+
+During the two weeks, I worked in a team to provide an AI-based solution aimed at speeding up the process of creating integration test scenarios for core banks' systems. The project was carried out in collaboration with \href{https://winikon.io/}{Winikon} (a Hungarian software company that implements cloud-based solutions for core banking system operations).
+%\divider
+\medskip
+%\divider
+\medskip
+
+\cvevent{\textbf{ECIU Challenge}: \href{https://challenges.eciu.org/challenges/2473589/business-analytics-for-a-sustainable-telecommunication-market}{Business Analytics for a Sustainable Telecommunication Market}}{\href{https://clabtrento.it/en/discover}{Contamination Lab Trento} w/ \textbf{WindTre}}{Mar 2022 -- May 2022}{Trento, Italy}
+The \href{https://www.eciu.org/}{ECIU} (European Consortium of Innovative Universities) is an EU-funded European consortium that gathers together learners, teachers, and researchers to cooperate with cities and businesses and solve real-life challenges.
+The goal of the challenge was to imagine the future telecom market and identify business opportunities to attract and retain the new generation of consumer and business customers while making the business more sustainable and environmentally-conscious.
+%\divider
+\medskip
+%\divider
+\medskip 
+
+\cvevent{\textbf{Start-up Lab}: \href{https://linktr.ee/kyrmusic}{Develop of the entrepreneurial project KYR}}{\href{https://clabtrento.it/en/discover}{Contamination Lab Trento}}{Feb 2022 -- May 2022}{Trento, Italy}
+\href{https://clabtrento.it/en/engage/start-up-lab}{Start-Up Lab} is an interdisciplinary innovative learning environment, where teams of six work on the development of an entrepreneurial project supported by instructors and experienced mentors.
+
+During my experience I learned how to generate and implement new business ideas and how to validate ideas and present them successfully.
+
+\href{https://linktr.ee/kyrmusic}{KYR} is the project that I developed with my team during Start-Up Lab.
+%\divider
+\medskip
+%\divider
+\medskip
+
+\cvevent{\textbf{SimuTorino}: \href{https://github.com/Bralli99/SimuTorino}{Simulating 5G-enabled vehicular networks in a Turin urban context.}}{University of Trento}{Oct 2021 -- Jan 2022}{Trento, Italy}
+The goal of the project was to simulate the traffic in an urban context and implement a 5G network that enables vehicular communications by using real data about the traffic flows and the position of the antennas.
+
+
+%\divider
+\medskip
+%\divider
+\medskip
+
+\cvevent{\textbf{Internship}: \href{https://archiviostorico.federipic.it/}{Develop of the FIPIC digital archive}}{\href{https://www.federipic.it/}{FIPIC}}{Feb 2021 -- Jun 2021}{Rome, Italy}
+\href{https://www.federipic.it/}{FIPIC} is the organisation that manages the practice of wheelchair basketball by athletes with physical disabilities. It is recognised by the Italian Paralympic Committee as a Paralympic Sports Federation.
+
+My activities were: development of a digital archive including data and documents of the Italian national wheelchair basketball team; development of the analytical visualisation interface of the records through the use of the Elastic Stack which consists of three open source frameworks (Logstash, Elasticsearch, Kibana); deployment of the whole project on a dedicated server.
+
+%\divider
+\medskip
+%\divider
+\medskip
+
+\cvevent{\textbf{Internship}: \href{https://mondoiot.wordpress.com/2017/06/28/progetto-iot-node-red-rabbitmq-mysql-phpmyadmin-esp8266/}{Develop of IoT project}}{\href{https://www.lunacom.net/}{LUNACOM}}{Jun 2017 -- Jun 2017}{Vicenza, Italy}
+\href{https://www.lunacom.net/}{LUNACOM} is a company that develops, designs and deploys ICT infrastructure solutions (networking, servers and client systems), adopting Virtualisation, Video-networking and VoIP.
+
+During my internship I developed, in a team of 4 students, an \href{https://mondoiot.wordpress.com/2017/06/28/progetto-iot-node-red-rabbitmq-mysql-phpmyadmin-esp8266/}{IoT project} using Arduino with a DHT11 humidity and temperature sensor module and a Raspberry Pi3 where we installed Apache and MySQL DBMS. The goal of the project was to detect data of temperature/humidity from the sensor and send them to our MySQL Database. Also, data could be visualized via a web page, accessing the database.
+
+%\divider
+\medskip
+%\divider
+\medskip
+
+\cvsection{VOLUNTEERING}
+\cvevent{\textbf{Scout Member}: \href{http://agesci.org/}{AGESCI}}{\href{http://www.agescicollinedelbrenta.it/}{B3}}{Jan 2007 -- Present}{Vicenza, Italy}
+The mission of Scouting is to contribute to the education of young people, through a value system based on the Scout Promise and Scout Law, to help build a better world in which people are self-fulfilling as individuals and play a constructive role in society.
+During my experience as a Scout leader, I have acquired leadership skills and learned the importance of being part of a movement.
+
+%\divider
+\medskip
+%\divider
+\medskip
+
+Updated version of this document available at: \href{https://github.com/Bralli99/CurriculumVitae/blob/e0ccac5747b84b1ad0b39f3462545507e19a3d18/Brando_Chiminelli_CV.pdf}{Brando Chiminelli CV}
+Date: November 6, 2022.
+\end{document}
+
